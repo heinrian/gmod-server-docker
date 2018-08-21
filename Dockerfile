@@ -15,6 +15,8 @@ RUN mkdir /gmod-base
 #RUN /steamcmd/steamcmd.sh +login anonymous +force_install_dir /gmod-base +app_update 4020 validate +quit
 RUN dpkg --add-architecture i386 &&  apt-get update && apt-get install -y libc6:i386
 RUN /steamcmd/steamcmd.sh +login anonymous +force_install_dir /gmod-base +app_update 4020 validate +quit
+RUN /steamcmd/steamcmd.sh +login anonymous +force_install_dir /css-base +app_update 232330 validate +quit
+
 
 
 # ----------------
